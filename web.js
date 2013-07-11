@@ -11,9 +11,9 @@ app.get('/', function(request, response) {
 	if (err) throw err;
 	console.log(data);
 	content = data;
-   c });
+    });
     console.log(content);
-    var text =  content.toString('utf-8');
+    var text =  content.toString('utf8');
     response.send(text);
 });
 
