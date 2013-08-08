@@ -108,8 +108,24 @@
       .footer a {
         color: #ccccff;
       }
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+	 div.addthis_toolbox {
+	  width:180px;
+	  margin: 0 auto;
+	 }
     </style>
-  <style type="text/css"></style>
+	<script type="text/javascript">	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-43045154-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -144,54 +160,54 @@
 	</div>
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <img alt="logo" src="http://metawod.apphb.com/Content/images/metaWOD_blue.png">
+	  <img src="http://metawod.apphb.com/Content/images/metaWOD_blue.png">
 	  </div>
 	<div class="span5 actions">
-	<div class="row-fluid">
-	  	<div class="span8 offset2">
-		    <div class="row-fluid statistics">
-				<div class="span4">
-					<div class="linediv-l">
-						<h3>0</h3><p>backers</p>
-					</div>
-				</div>
-				<div class="span4">
-					<div class="linediv-c">
-					<h3>$0</h3><p>of $1,000</p>
-					</div>
-				</div>
-				<div class="span4">
-					<div class="linediv-r">
-					<h3>100</h3><p>days left</p>
-					</div>
-				</div>
-			</div>
+	  <div class="span8 offset2">
+	    <div class="statistics">
+	      <div class="span4">
+		<div class="linediv-l">
+		  <h3>0</h3><p>backers</p>
+		  </div>
+		</div>
+	      <div class="span4">
+		<div class="linediv-c">
+		  <h3>$0</h3><p>of $1,000</p>
+		  </div>
+		</div>
+	      <div class="span4">
+		<div class="linediv-r">
+		  <h3>100</h3><p>days left</p>
+		  </div>
+		</div>
+	      </div>
 	    </div>
-	    <div class="row-fluid">
 		<div class="span10 offset1">
 			<div class="thermometer progress active">
-				<div class="bar bar-success" style="width: 0%"></div>
-				<div class="bar bar-warning" style="width: 100%"></div>
+			  <div class="bar bar-success" style="width: 0%"></div>
+			  <div class="bar bar-warning" style="width: 100%"></div>
 			</div>
 		</div>
-	    </div>
-		<div class="row-fluid">
 		<div class="span6 offset3 order">
 			<button class="btn btn-success btn-large">Preorder</button>
 		</div>
-		</div>
-		<div class="row-fluid">
 		<div class="span8 offset2 social">
-			<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
-			<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>			
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5203028f455cdd18"></script>
+			<!-- AddThis Button END -->	    
 		</div>
-		</div>
-	</div>
 	</div>
 	</div>
       <div class="row-fluid section1">
 	<div class="span5 offset1 asset">
-	  <img alt="salesGuy" class="img-polaroid" src="http://www.businessreviewcanada.ca/money_matters/89793270b.jpg">
+	  <img class="img-polaroid" src="http://www.businessreviewcanada.ca/money_matters/89793270b.jpg">
 	  </div>
 	<div class="span5 copy">
 		<p>
@@ -206,7 +222,7 @@
 	    </p>
 	  </div>
 	<div class="span5 asset">
-	  <img alt="smartphone" class="img-polaroid" src="http://liberatenet.org/wp-content/uploads/2013/06/SmartphoneAppMood_120412.jpg">
+	  <img class="img-polaroid" src="http://liberatenet.org/wp-content/uploads/2013/06/SmartphoneAppMood_120412.jpg">
 	  </div>
 	</div>
       <div class="row-fluid faq">
@@ -246,5 +262,15 @@
 	  </div>
 	</div>
       </div>
+      <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-43045154-1', 'bitstart.net');
+		  ga('send', 'pageview');
+		
+		</script>
   </body>
 </html>
